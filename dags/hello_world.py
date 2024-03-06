@@ -20,6 +20,7 @@ dag = DAG(
 )
 
 def print_hello():
+    print('Hello Airflow! This is a log message.')
     return 'Hello Airflow!'
 
 t1 = PythonOperator(
